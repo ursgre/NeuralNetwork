@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/brain.js" defer></script>
+    <script src="index.js" defer></script>
+</head>
+
+<body>
+    <div class="card">
+        <div class="top">
+            <h2>Czy powinienem kupić ten samochód?</h2>
+            <p>Często osoby chcące kupić auto zastanawiają się czy dany samochód jest warty kupienia.</p>
+              <p>Dzięki naszej stronie internetowej nie musisz się tym już martwić</p>  
+               <p>Nasz algorytm podejmie decyzję za Ciebie!</p> 
+           
+            <p>Jeżeli odpowiedź brzmi tak,wstaw 1.</p>
+            <p>Jeżeli odpowiedź brzmi nie,wstaw 0.</p>
+        </div>
+        <div class="bottom">
+            <div class="bottom-box">
+                <label for="car_paint">Czy lakier jest w dobrym stanie?</label>
+                <input type="number" id="car_paint">
+            </div>
+            <div class="bottom-box">
+                <label for="mileage">Czy przebieg auta liczy mniej niż 200 tysięcy kilometrów?</label>
+                <input type="number" id="mileage">
+            </div>
+            <div class="bottom-box">
+                <label for="upholstery">Czy tapicerka jest w dobrym stanie,czyli nie jest wytarta ani popękana?</label>
+                <input type="number" id="upholstery">
+            </div>
+            <div class="bottom-box">
+                <label for="test_drive">Czy sprzedawca zgadza się na jazdę próbną?</label>
+                <input type="number" id="test_drive">
+            </div>
+            <div class="bottom-box">
+                <label for="damage">Czy samochód uległ wcześniej wypadkowi,co spowodowało wystrzelenie pasów i poduszek powietrznych? </label>
+                <input type="number" id="damage">
+            </div>
+            <div class="bottom-box">
+                <label for="VIN">Czy numer VIN zgadza się na nadwoziu jak i we wszystkich dokumentach?</label>
+                <input type="number" id="VIN">
+            </div>
+            <div class="bottom-box">
+                <label for="OC">Czy samochód ma ważną polisę OC?</label>
+                <input type="number" id="OC">
+            </div>
+            <div class="bottom-box">
+                <label for="purchase_agreement">Czy właściciel posiada wcześniejszą umowę kupna/sprzedaży?</label>
+                <input type="number" id="purchase_agreement">
+            </div>
+            <div class="bottom-box">
+                <label for="errors">Czy sterownik wykazał,że wszystko jest w porządku,czyli nie wykryto żadnych błędów?</label>
+                <input type="number" id="errors">
+            </div>
+            <div class="bottom-box">
+                <label for="country">Czy auto zostało pierwotnie kupione w kraju?</label>
+                <input type="number" id="country">
+            </div>
+        </div>
+        <div class="button-box">
+            <button class="show">Dowiedz się!</button>
+        </div>
+        <p class="answer"></p>
+    </div>
+</body>
+
+</html>
